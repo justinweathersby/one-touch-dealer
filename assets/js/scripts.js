@@ -13,7 +13,7 @@ function scroll_to(clicked_link, nav_height) {
 
 
 jQuery(document).ready(function() {
-	
+
 	/*
 	    Navigation
 	*/
@@ -27,25 +27,25 @@ jQuery(document).ready(function() {
 			var dropdown_height = 0;
 			if($(this).parents('ul.dropdown-menu').length === 1) {
 				dropdown_height = $(this).parents('ul.dropdown-menu').height();
-			}			
+			}
 			scroll_to($(this), dropdown_height);
 		}
 	});
-	
+
     /*
         Fullscreen background
     */
     $('.top-content').backstretch("assets/img/backgrounds/1.jpg");
-    $('.how-it-works-container').backstretch("assets/img/backgrounds/1.jpg");
+    $('.pricing-container').backstretch("assets/img/backgrounds/1.jpg");
     $('.call-to-action-container').backstretch("assets/img/backgrounds/1.jpg");
     $('.latest-tweets-container').backstretch("assets/img/backgrounds/1.jpg");
     $('.contact-container').backstretch("assets/img/backgrounds/2.jpg");
-    
+
     /*
         Wow
     */
     new WOW().init();
-    
+
     /*
         Image popup
     */
@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
 			}
 		}
 	});
-	
+
 	/*
         FAQ
     */
@@ -78,19 +78,19 @@ jQuery(document).ready(function() {
 		if(this_p.css('display') == 'none') {
 			this_p.slideDown(400);
 			this_icon.removeClass('fa-plus').addClass('fa-minus');
-		} 
+		}
 		else {
 			this_p.slideUp(400);
 			this_icon.removeClass('fa-minus').addClass('fa-plus');
 		}
 	});
-	
+
 	/*
 	    Testimonials
 	*/
 	$('.testimonial-active').html('<p>' + $('.testimonial-single:first p').html() + '</p>');
 	$('.testimonial-single:first .testimonial-single-image img').css('opacity', '1');
-	
+
 	$('.testimonial-single-image img').on('click', function() {
 		$('.testimonial-single-image img').css('opacity', '0.5');
 		$(this).css('opacity', '1');
@@ -100,7 +100,7 @@ jQuery(document).ready(function() {
 			$(this).fadeIn(400);
 		});
 	});
-	
+
 	/*
 	    Show latest tweets
 	*/
@@ -111,13 +111,13 @@ jQuery(document).ready(function() {
 		count: 5,
 		loading_text: 'loading ...'
 	});
-	
+
 	$('.latest-tweets .tweets .tweet_list li').append('<span class="tweet_nav"></span>');
 	$('.latest-tweets .tweets .tweet_list li:first .tweet_nav').css('background', '#fff');
 	$('.latest-tweets .tweets .tweet_list li .tweet_time').hide();
 	$('.latest-tweets .tweets .tweet_list li .tweet_text').hide();
 	$('.latest-tweets .tweet-active').html($('.latest-tweets .tweets .tweet_list li:first .tweet_text').html());
-	
+
 	$('.latest-tweets .tweets .tweet_list li .tweet_nav').on('click', function() {
 		$('.latest-tweets .tweets .tweet_list li .tweet_nav').css('background', 'rgba(255, 255, 255, 0.6)');
 		var clicked_tweet_nav = $(this);
@@ -131,13 +131,13 @@ jQuery(document).ready(function() {
 		});
 		clicked_tweet_nav.css('background', '#fff');
 	});
-	
+
 	/*
 	    Subscription form
 	*/
 	$('.success-message').hide();
 	$('.error-message').hide();
-	
+
 	$('.subscribe form').submit(function(e) {
 		e.preventDefault();
 	    var postdata = $('.subscribe form').serialize();
@@ -163,7 +163,7 @@ jQuery(document).ready(function() {
 	        }
 	    });
 	});
-	
+
 	/*
 	    Contact form
 	*/
@@ -199,6 +199,5 @@ jQuery(document).ready(function() {
 	        }
 	    });
 	});
-    
-});
 
+});

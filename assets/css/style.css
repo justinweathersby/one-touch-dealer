@@ -194,6 +194,62 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 }
 .how-it-works-description p:last-child { margin-bottom: 10px; }
 
+#how-it-tabs li {
+    display: inline-block;
+    float: none;
+    margin-bottom: -1px;
+    width: 33%;
+}
+#how-it-tabs > li > a {
+    background-color: #d3d3d3;
+    border: medium none;
+    border-radius: 0;
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px 15px;
+    position: relative;
+    color: #fff;
+}
+#how-it-tabs > li > a:hover {
+    background-color: #3da4cc;
+}
+#how-it-tabs > li.active > a, #how-it-tabs > li.active > a:focus, #how-it-tabs > li.active > a:hover {
+    background-color: #3da4cc;
+    border-color:transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0;
+    color: #fff;
+    cursor: default;
+    font-size: 24px;
+    font-weight: 400;
+}
+.list1{
+	margin: 0 0 0 20px;
+	padding: 0;
+	text-align: left;
+}
+.list1 li{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.how-it-content h2 {
+	margin-top: 0;
+	text-align: left;
+}
+.how-it-content {
+	padding: 50px 0 0;
+}
+.read-more-btn{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px;
+    padding: 7px 20px;
+    background-color: #14ccff;
+    border-color: #14ccff;
+    color: #fff;
+}
 
 /***** Screenshots *****/
 
@@ -437,13 +493,13 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 
 /***** Contact us *****/
 
-.contact-form, 
+.contact-form,
 .contact-address {
 	padding-bottom: 20px;
 	text-align: left;
 }
 
-.contact-form h3, 
+.contact-form h3,
 .contact-address h3 {
 	padding: 0 0 10px 0;
 	font-size: 26px;
@@ -461,7 +517,7 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 	margin: 15px 0 0 0;
 }
 
-.contact-form form input, 
+.contact-form form input,
 .contact-form form textarea {
     width: 95%;
     height: 52px;
@@ -575,7 +631,7 @@ footer {
 	margin: 7px 0 0 12px;
 }
 
-.button-1 .button-1-right .button-1-right-top, 
+.button-1 .button-1-right .button-1-right-top,
 .button-1 .button-1-right .button-1-right-bottom {
 	float: left;
 	width: 100%;
@@ -625,7 +681,7 @@ footer {
 	margin: 7px 0 0 10px;
 }
 
-.button-2 .button-2-right .button-2-right-top, 
+.button-2 .button-2-right .button-2-right-top,
 .button-2 .button-2-right .button-2-right-bottom {
 	float: left;
 	width: 100%;
