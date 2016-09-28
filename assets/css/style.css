@@ -194,6 +194,10 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 }
 .how-it-works-description p:last-child { margin-bottom: 10px; }
 
+#how-it-tabs {
+  border-bottom: 0px;
+}
+
 #how-it-tabs li {
     display: inline-block;
     float: none;
@@ -212,10 +216,22 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
     color: #fff;
 }
 #how-it-tabs > li > a:hover {
-    background-color: #3da4cc;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#339bc2+0,1179a0+100 */
+    background: #339bc2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #339bc2 0%, #1179a0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #339bc2 0%,#1179a0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #339bc2 0%,#1179a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339bc2', endColorstr='#1179a0',GradientType=0 ); /* IE6-9 */
+
 }
 #how-it-tabs > li.active > a, #how-it-tabs > li.active > a:focus, #how-it-tabs > li.active > a:hover {
-    background-color: #3da4cc;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#339bc2+0,1179a0+100 */
+    background: #339bc2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #339bc2 0%, #1179a0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #339bc2 0%,#1179a0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #339bc2 0%,#1179a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339bc2', endColorstr='#1179a0',GradientType=0 ); /* IE6-9 */
+
     border-color:transparent;
     border-image: none;
     border-style: solid;
@@ -264,123 +280,6 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 .screenshot-box img { max-width: 80%; cursor: pointer; }
 
 
-/***** Faq *****/
-
-.faq-container {
-	background: #f8f8f8;
-}
-
-.faq-box {
-	padding-top: 30px;
-}
-
-.faq-box-left {
-	text-align: left;
-}
-
-.single-faq {
-	position: relative;
-	min-height: 60px;
-	margin-bottom: 20px;
-	padding: 15px 25px;
-	background: #f6f6f6;
-	border-left: 1px solid #be5254;
-	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
-}
-
-.single-faq h3 {
-	margin: 0;
-	padding-right: 35px;
-	font-size: 22px;
-    font-weight: 100;
-    line-height: 30px;
-}
-
-.single-faq span {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 60px;
-	height: 60px;
-	padding: 23px;
-	font-size: 14px;
-	line-height: 14px;
-	cursor: pointer;
-	z-index: 100;
-}
-.single-faq span i { vertical-align: middle; }
-
-.single-faq .single-faq-text {
-	display: none;
-	margin-top: 10px;
-}
-
-.single-faq p {
-	font-size: 18px;
-    line-height: 32px;
-}
-.single-faq p:last-child { margin: 0; }
-
-.faq-box-right span {
-	display: inline-block;
-	font-family: Georgia, serif;
-	font-size: 500px;
-	color: #eee;
-	line-height: 380px;
-	-ms-transform: rotate(20deg); -moz-transform: rotate(20deg); -webkit-transform: rotate(20deg); transform: rotate(20deg);
-}
-
-
-/***** Call to action *****/
-
-.call-to-action-button {
-	padding-top: 30px;
-	padding-bottom: 20px;
-}
-
-.call-to-action-button .button-1 {
-	margin-right: 20px;
-}
-
-
-/***** Testimonials *****/
-
-.testimonials p {
-	padding: 0;
-}
-
-.testimonial-single {
-	display: inline-block;
-}
-
-.testimonial-single p {
-	display: none;
-}
-
-.testimonial-single-image {
-	display: inline-block;
-	width: 58px;
-	margin: 0 5px 10px 5px;
-}
-
-.testimonial-single-image img {
-	width: 100%;
-	opacity: 0.5;
-	cursor: pointer;
-	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
-    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
-}
-
-.testimonial-active {
-	padding-bottom: 20px;
-}
-
-.testimonial-quote {
-	font-family: Georgia, serif;
-	font-size: 90px;
-	line-height: 70px;
-	color: #ddd;
-}
 
 
 /***** About us *****/
@@ -417,77 +316,6 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 
 .about-us-box .about-us-social {
     margin-top: 5px;
-}
-
-
-/***** Latest tweets *****/
-
-.latest-tweets p {
-	padding: 0;
-	word-wrap: break-word;
-}
-
-.latest-tweets-container a, .latest-tweets-container a:focus { color: #fff; }
-.latest-tweets-container a:hover { color: #fff; border-bottom: 1px dotted #fff; }
-
-.latest-tweets ul {
-	margin: 20px 0 0 0;
-	padding: 0;
-	-webkit-padding-start: 0;
-}
-
-.latest-tweets li {
-	margin: 0 7px;
-	display: inline-block;
-	list-style: none;
-}
-
-.latest-tweets li .tweet_nav {
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
-	cursor: pointer;
-	-moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
-    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
-}
-
-.tweets-follow-us {
-	padding-top: 30px;
-	padding-bottom: 20px;
-}
-
-.tweets-follow-us {
-	font-size: 22px;
-    line-height: 36px;
-}
-
-
-/***** Subscription form *****/
-
-.subscribe form {
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.subscribe form input.subscribe-email {
-    width: 362px;
-    height: 52px;
-}
-
-.success-message, .error-message {
-    font-size: 22px;
-    line-height: 36px;
-}
-
-.success-message {
-	margin: 20px 0 10px 0;
-}
-
-.error-message {
-	margin: 10px 0;
-	color: #be5254;
 }
 
 
@@ -595,6 +423,17 @@ footer {
 
 
 /***** BUTTONS *****/
+.btn-terms{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#339bc2+0,1179a0+100 */
+  background: #339bc2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #339bc2 0%, #1179a0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #339bc2 0%,#1179a0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #339bc2 0%,#1179a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339bc2', endColorstr='#1179a0',GradientType=0 ); /* IE6-9 */
+
+  color:white;
+  width:100px;
+}
 
 .button-1 {
 	display: inline-block;
