@@ -194,6 +194,32 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 }
 .how-it-works-description p:last-child { margin-bottom: 10px; }
 
+
+/* This media query works for medium screen devices (All devices with resolution from 992px to 1199px), for example Computers */
+
+@media (min-width: 1201px){
+
+  #how-it-tabs li{
+    width: 33%;
+  }
+}
+
+/* This media query works for small screen devices (All devices with resolution from 768px to 991px), for example tablets */
+
+@media (min-width: 801px) and (max-width: 1200px){
+  #how-it-tabs li{
+    width: 45%;
+  }
+}
+
+/* This media query works for extra small screen devices (All devices with below resolution of 767px), for example Iphones, Smart Phones */
+
+@media (max-width: 800px){
+  #how-it-tabs li{
+    width: 100%;
+  }
+}
+
 #how-it-tabs {
   border-bottom: 0px;
 }
@@ -202,17 +228,20 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
     display: inline-block;
     float: none;
     margin-bottom: -1px;
-    width: 33%;
+    /*width: 33%;*/
+    margin-top:10px;
+    /*max-width: 33%;*/
+    /*max-height:10px;*/
 }
 #how-it-tabs > li > a {
     background-color: #d3d3d3;
     border: medium none;
     border-radius: 0;
-    display: block;
+    /*display: block;*/
     font-size: 24px;
     font-weight: 400;
     padding: 5px 15px;
-    position: relative;
+    /*position: relative;*/
     color: #fff;
 }
 #how-it-tabs > li > a:hover {
