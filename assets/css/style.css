@@ -74,7 +74,7 @@ ul.navbar-nav {
 }
 
 ul.navbar-nav li a { padding-top: 20px; padding-bottom: 20px; background: #333; color: #fff; }
-ul.navbar-nav li a:hover { background: #333; color: #be5254; }
+ul.navbar-nav li a:hover { background: #333; color: #339bc2; }
 ul.navbar-nav li a:focus { background: #333; color: #fff; outline: 0; }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background: #333; }
 
@@ -199,7 +199,7 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 
 @media (min-width: 1201px){
 
-  #how-it-tabs li{
+  ul#how-it-tabs li{
     width: 33%;
   }
 }
@@ -207,7 +207,7 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 /* This media query works for small screen devices (All devices with resolution from 768px to 991px), for example tablets */
 
 @media (min-width: 801px) and (max-width: 1200px){
-  #how-it-tabs li{
+  ul#how-it-tabs li{
     width: 45%;
   }
 }
@@ -215,7 +215,7 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
 /* This media query works for extra small screen devices (All devices with below resolution of 767px), for example Iphones, Smart Phones */
 
 @media (max-width: 800px){
-  #how-it-tabs li{
+  ul#how-it-tabs li{
     width: 100%;
   }
 }
@@ -228,20 +228,15 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
     display: inline-block;
     float: none;
     margin-bottom: -1px;
-    /*width: 33%;*/
     margin-top:10px;
-    /*max-width: 33%;*/
-    /*max-height:10px;*/
 }
 #how-it-tabs > li > a {
     background-color: #d3d3d3;
     border: medium none;
     border-radius: 0;
-    /*display: block;*/
     font-size: 24px;
     font-weight: 400;
     padding: 5px 15px;
-    /*position: relative;*/
     color: #fff;
 }
 #how-it-tabs > li > a:hover {
@@ -270,6 +265,32 @@ ul.navbar-nav li .dropdown-menu a { padding-top: 13px; padding-bottom: 13px; fon
     font-size: 24px;
     font-weight: 400;
 }
+
+
+div.tabContent {
+  /*border: 1px solid #c9c3ba;
+  padding: 0.5em;
+  background-color: #f1f0ee;
+  display: none;
+  min-width: 400px;
+  width: 400px;
+  min-height: 100px;
+  height: 100px;
+  overflow: auto;*/
+  padding: 50px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .list1{
 	margin: 0 0 0 20px;
 	padding: 0;
